@@ -1,0 +1,424 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hiddenmenu {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    right: -50%;
+    transition: all 0.5s ease;
+}
+
+.hiddenmenu ul {
+    list-style: none;
+}
+
+.hiddenmenu ul li {
+    padding: 1vw 0;
+}
+
+.hiddenmenu ul li a {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #479CD5;
+}
+
+
+/*utility */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad {
+    padding: 1vw 8vw;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/*Navigation bar*/
+
+.mane {
+    display: none;
+}
+
+nav img {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #479CD5;
+}
+
+nav .bots {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav .bots button {
+    width: 100px;
+    padding: 0.5vw;
+    font-size: 16px;
+    border: 1px solid #111226;
+    background-color: #111226;
+    color: #fff;
+}
+
+nav .bots button:last-child {
+    background-color: #fff;
+    color: #111226;
+}
+
+
+/* Header  */
+
+header {
+    background-color: #479CD5;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .text h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+header .text .special {
+    color: #222;
+}
+
+header .text p {
+    font-size: 1.3em;
+    opacity: 0.8;
+    width: 100%;
+    color: #fff;
+}
+
+header .text .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .text .search input:first-child {
+    padding: 1.0vw 1vw;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+}
+
+header .text .search input:last-child {
+    width: 25%;
+    padding: 0.8vw 1vw;
+    background-color: #111226;
+    color: #fff;
+    font-size: 1.1em;
+    transition: all 0.5s ease;
+}
+
+header .text .search input:last-child:hover {
+    background-color: #fff;
+    color: #111226;
+}
+
+header .img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header .img img {
+    width: 90%;
+}
+
+
+/* services */
+
+.services .text {
+    width: 100%;
+}
+
+.services .text h2 {
+    font-size: 2.5em;
+}
+
+.services .text p {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.services .text button {
+    margin-top: 5em;
+    width: 25%;
+    padding: 0.8vw 1vw;
+    background-color: #111226;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.services .text button:hover {
+    background-color: #fff;
+    color: #111226;
+}
+
+.services .cards {
+    justify-self: end;
+}
+
+.services .cards .card {
+    border: 1px solid #111;
+    padding: 2vw;
+    box-shadow: -3px 2px #111226, -10px 10px lightblue;
+}
+
+.services .cards .card p:first-child {
+    font-weight: 500;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.services .cards .card p:last-child {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.services .cards .card .icons svg {
+    width: 50px;
+}
+
+
+/* Cources */
+
+.courses {
+    margin: 2em;
+}
+
+.courses h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.courses .sup-titel {
+    font-size: 1.3em;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 5vw 0;
+}
+
+.courses .cards {
+    justify-content: space-between;
+}
+
+.courses .card {
+    border: 1px solid #111;
+    flex-basis: 25%;
+    text-align: center;
+    padding: 2vw;
+    box-shadow: 3px 2px 2px #111226;
+    border-radius: 16px;
+}
+
+.courses .card h2 {
+    font-size: 2em;
+}
+
+.courses .card p {
+    font-size: 1.1em;
+}
+
+.courses .card button {
+    padding: 0.7vw 1vw;
+    font-size: 1em;
+    width: 80%;
+    border-radius: 16px;
+    background-color: #479CD5;
+    border: none;
+    color: #fff;
+}
+
+
+/* contactUs */
+
+.contactUs .contaner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contactUs .contaner .text-fied h1 {
+    font-size: 3em;
+}
+
+.contactUs .contaner .text-fied p {
+    font-size: 1.5em;
+    opacity: 0.8;
+    width: 90%;
+}
+
+.contactUs .contaner .text-fied div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0;
+}
+
+.contactUs .contaner .text-fied input {
+    padding: 0.8vw 4vw;
+    box-shadow: 3px 2px 2px #C4C4C4;
+    border-radius: 10px;
+}
+
+.contactUs .contaner .text-fied textarea {
+    box-shadow: 3px 2px 2px #C4C4C4;
+    border-radius: 10px;
+    padding: 0.8vw 2vw;
+    width: 90%;
+}
+
+.contactUs .contaner .text-fied button {
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 0.8vw 1vw;
+    background-color: #479CD5;
+    color: #fff;
+    border: 1px solid #479CD5;
+    transition: all 0.5s ease;
+}
+
+.contactUs .contaner .text-fied button:hover {
+    background-color: #fff;
+    color: #479CD5;
+}
+
+.contactUs .contaner .map-cont img {
+    width: 100%;
+}
+
+.contactUs .contaner .map-cont .con {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactUs .contaner .map-cont .icons {
+    width: 10%;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 2px 2px #C4C4C4;
+    margin: 1em;
+}
+
+.contactUs .contaner .map-cont .icons svg {
+    width: 50%;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #211E48;
+    color: #fff;
+}
+
+footer p {
+    opacity: 0.8;
+    font-size: 1.1em;
+}
+
+footer .scoial {
+    padding: 1vw 0;
+}
+
+footer span {
+    color: #479CD5;
+}
+
+footer .scoial i {
+    padding: 0 1vw;
+    font-size: 1.5em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 0.5vw 0;
+    font-size: 1.2em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+footer .copyright {
+    border-top: 1px solid #fff;
+    text-align: center;
+}

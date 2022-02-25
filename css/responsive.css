@@ -1,0 +1,214 @@
+/* Small devices (portrait tablets and large phones, 600px) */
+
+@media only screen and (max-width: 640px) {
+    header {
+        grid-template-columns: 1fr;
+        width: 95%;
+        background-color: #479CD5;
+    }
+    .pad {
+        padding: 0.5vw 0.5vw;
+    }
+    header .text {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .text h1 {
+        font-size: 3em;
+    }
+    header .text p {
+        font-size: 2em;
+        padding: 0;
+    }
+    header .img {
+        display: none;
+    }
+    header .text .search {
+        flex-direction: column;
+        margin: 1em;
+    }
+    header .text .search input:first-child {
+        margin: 1em;
+        width: 80%;
+    }
+    header .text .search input:last-child {
+        width: 50%;
+        padding: 0.8vw 1vw;
+        background-color: #111226;
+        color: #fff;
+        font-size: 1em;
+        transition: none;
+    }
+    /* services */
+    .services .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .services .text {
+        text-align: center;
+    }
+    .services .text button {
+        display: block;
+        margin: 0 auto;
+    }
+    .services .cards {
+        grid-template-columns: 1fr 1fr;
+        justify-self: end;
+    }
+    /* Cources */
+    .courses .sup-titel {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 780px) {
+    .mane {
+        display: block;
+        width: 30%;
+        height: 80%;
+        justify-self: flex-end;
+        font-size: 1.5em;
+    }
+    nav ul,
+    .bots,
+    .bots button {
+        display: none;
+    }
+    .pad {
+        padding: 1vw 3vw;
+    }
+    header .text h1 {
+        font-size: 1.5em;
+    }
+    header .text p {
+        font-size: 1em;
+        padding: 0;
+    }
+    header .img img {
+        width: 100%;
+    }
+    /* services */
+    .services .text h2 {
+        font-size: 1.5em;
+    }
+    .services .text p {
+        font-size: 1em;
+    }
+    .services .text button {
+        width: 50%;
+    }
+    .services .text {
+        align-self: center;
+    }
+    .services .cards {
+        justify-self: end;
+    }
+    .services .cards .card {
+        border: 1px solid #111;
+        padding: 1vw;
+        box-shadow: -3px 2px #111226, -10px 10px lightblue;
+    }
+    .services .card p {
+        font-size: 0.8em;
+        opacity: 1;
+    }
+    .services .cards .card p:last-child {
+        font-size: 0.6em;
+    }
+    .services .cards .card .icons svg {
+        width: 30px;
+    }
+    /* Cources */
+    .courses h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+    .courses .sup-titel {
+        font-size: 1em;
+        text-align: center;
+        width: 80%;
+    }
+    .courses .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .courses .card h2 {
+        font-size: 2em;
+    }
+    .courses .card p {
+        font-size: 1em;
+    }
+    .courses .card button {
+        padding: 0.8vw 1vw;
+    }
+    /* contactUs */
+    .contactUs .contaner {
+        grid-template-columns: 1fr;
+    }
+    .contactUs .contaner .text-fied h1 {
+        font-size: 2em;
+    }
+    .contactUs .contaner .text-fied p {
+        font-size: 1em;
+        width: 70%;
+    }
+    .contactUs .contaner .text-fied div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .contactUs .contaner .text-fied input {
+        padding: 1.5vw 4vw;
+    }
+    .contactUs .contaner .text-fied textarea {
+        width: 95%;
+    }
+    .contactUs .contaner .text-fied button {
+        padding: 1.5vw 1vw;
+    }
+    footer .contaner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between
+    }
+    footer p {
+        opacity: 0.8;
+        font-size: 1em;
+    }
+    footer .copyright {
+        border-top: 1px solid #fff;
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 900px) */
+
+@media only screen and (max-width: 900px) {
+    nav img {
+        width: 40px;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    nav .bots button {
+        width: 70%;
+        padding: 0.5vw;
+    }
+    .pad {
+        padding: 1vw 5vw;
+    }
+    header .text h1 {
+        font-size: 2em;
+    }
+    header .text p {
+        font-size: 1em;
+        padding: 1em 0;
+    }
+    header .img img {
+        width: 90%;
+    }
+}
